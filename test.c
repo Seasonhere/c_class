@@ -2,6 +2,9 @@
 int main()
 {
 	printf("hellow rutu");
-return 0;
+	printf("@@@###123");
+	printf("........");
+	
+        return 0;
 }
 :
