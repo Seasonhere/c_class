@@ -1,26 +1,42 @@
 #include<stdio.h>
+int add(int a,int b);
+int sub(int a,int b);
+int mul(int a,int b);
+int div(int a,int b);
 int main()
 {
-int a,i,p=0;
-printf("enter the number");
-scanf("%d",&a);
+int num1,num2,result1,result2,result3,result4;
 
-for (i=2;i<=a;i++)
+printf("enter the nmuber");
+scanf("%d %d",& num1 ,&num2);
+result1= add(num1,num2);
+result2= sub(num1,num2);
+result3= mul(num1,num2);
+result4=div(num1,num2);
 
-{
-if(a%i==0)
-{
-p++;
-}
-}
-if(p==1)
-{
-printf("prime num");
-}
-else
-{
-printf(" not prime number");
-}
+
+printf("the addition is %d \n",result1);
+printf("the subtraction is %d \n",result2);
+printf("the multiplication is %d \n",result3);
+printf("the division is %d \n",result4);
+
+
 return 0;
 }
+int add(int a,int b)
 
+{
+return a+b;
+}
+int sub(int a,int b)
+{
+return a-b;
+}
+int mul(int a,int b)
+{
+return  a*b;
+}
+int div(int a,int b)
+{
+return a/b;
+}
